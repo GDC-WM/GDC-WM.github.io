@@ -4,7 +4,7 @@ from flask import Flask, redirect, url_for, render_template, request
 site = Flask(__name__)
 
 
-@nextbook.route("/")
+@site.route("/")
 def home():
     return render_template("home.html")
 
