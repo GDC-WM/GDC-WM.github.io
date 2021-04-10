@@ -1,0 +1,12 @@
+{% extends "frame.html" %}
+
+{% block title %}parryt{% endblock %}
+
+{% block bar_home %}class="active"{% endblock %}
+
+{% block body %}
+<h1>Parryt</h1>
+<i>(Pronounced parrot)</i>
+<p>Parryt is a game about a man in a parrot suit on a quest to save parrots from evil pirates.</p>
+<img src="{{ url_for('static', filename='screenshot.png') }}" /> <br>
+{% endblock %}
