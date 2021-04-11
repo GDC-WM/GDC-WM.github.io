@@ -1,0 +1,7 @@
+#IDE File extensions
+
+#IDE Folders
+/.vscode
+
+#Default dance on McOS
+.DS_Store
