@@ -12,8 +12,20 @@
     color: var(--fg0);
   }
 
+  h1 {
+    font-size: 3em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
   .body {
-    padding-top: 1cm;
+    margin: 2cm;
     padding-bottom: 2cm;
   }
 
