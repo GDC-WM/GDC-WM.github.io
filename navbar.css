@@ -30,6 +30,7 @@
   }
 
   .topnav {
+    display: inline-block;
     overflow: hidden;
     background-color: var(--bg1);
   }
