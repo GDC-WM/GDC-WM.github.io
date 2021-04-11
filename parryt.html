@@ -1,12 +1,92 @@
-{% extends "frame.html" %}
+<!DOCTYPE html>
+<meta charset="utf-8">
 
-{% block title %}parryt{% endblock %}
+<html>
+  <head>
+    <title>Parryt - GDC@WM</title>
+  </head>
 
-{% block bar_home %}class="active"{% endblock %}
+  <body>
+    <style>
+      :root {
+        --bg0: #000000;
+        --bg1: #111111;
+        --fg0: #ffffff;
+        --hl-bg: #00aaaa;
+      }
 
-{% block body %}
-<h1>Parryt</h1>
-<i>(Pronounced parrot)</i>
-<p>Parryt is a game about a man in a parrot suit on a quest to save parrots from evil pirates.</p>
-<img src="{{ url_for('static', filename='screenshot.png') }}" /> <br>
-{% endblock %}
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: var(--bg0);
+        color: var(--fg0);
+      }
+
+      .body {
+        padding-top: 1cm;
+        padding-bottom: 2cm;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: var(--bg1);
+      }
+
+      .topnav a {
+        float: left;
+        color: var(--fg0);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav a:hover {
+        background-color: var(--bg0);
+      }
+
+      .topnav a.active {
+        background-color: var(--hl-bg);
+        color: var(--bg0);
+      }
+
+      .link {
+        color: var(--hl-bg);
+      }
+
+      .link:hover {
+          color: var(--bg0);
+          background-color: var(--hl-bg);
+      }
+
+      div.center {
+        text-align: center;
+      }
+
+      div.left {
+        text-align: left;
+        padding-top: 3cm;
+        padding-left: 3cm;
+      }
+
+    </style>
+
+    <div class="topnav">
+      <a href="/" class="active">Home</a>
+      <a href="/parryt" >Parryt</a>
+    </div>
+
+    <div class="body">
+      <h1>Parryt</h1>
+      <i>(Pronounced parrot)</i>
+      <p>Parryt is a game about a man in a parrot suit, named Pari, who is on a quest to save parrots from evil pirates.</p>
+      <img src="{{ url_for('static', filename='screenshot.png') }}" /> <br>
+      <br>
+      <h3>Mechanics</h3>
+      <p>Parryt is a 2d platformer designed around the concept of parrying attacks to complete the game. Enemies will fire projectiles at Pari and the only way he has to fight back is to parry those attacks, thereby sending the projectiles back at the enemies.</p>
+      <br>
+      <h3>Story</h3>
+      <p>The premise for the story is that Pari is a parrot enthusiast who learns of the mistreatment of his feathered friends by pirates, and takes it upon himself to save them.</p>
+    </div>
+  </body>
+</html>
