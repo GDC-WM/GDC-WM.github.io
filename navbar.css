@@ -90,3 +90,17 @@
     margin: 5px;
     text-align: center;
   }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: var(--bg0);
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: var(--bg0);
+    border: var(--bg0);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
